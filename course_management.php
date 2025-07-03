@@ -8,6 +8,8 @@ if (!isset($_SESSION['admin'])) {
     exit();
 }
 
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add'])) {
     $course_name = trim($_POST['course_name']);
     $group_name = trim($_POST['group_name']);
@@ -74,7 +76,7 @@ $edit_id = isset($_GET['edit']) ? intval($_GET['edit']) : 0;
     font-family: Arial, sans-serif;
   }
 
-
+/*----------------------------------------*/
 
   body {
     min-height: 100vh;
